@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>E-Commerce Products</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>My E-Commerce Store</h1>
+    </header>
+
+    <main>
+
+        <!-- ADD PRODUCT -->
+        <section class="add-product">
+
+            <h2>Add Product</h2>
+
+            <form id="productForm">
+
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Product Name"
+                    required
+                >
+
+                <input
+                    type="text"
+                    id="description"
+                    placeholder="Description"
+                    required
+                >
+
+                <input
+                    type="number"
+                    id="price"
+                    placeholder="Price"
+                    required
+                >
+
+                <input
+                    type="text"
+                    id="image"
+                    placeholder="Image name"
+                >
+
+                <input
+                    type="number"
+                    id="stock"
+                    placeholder="Stock"
+                    required
+                >
+
+                <button type="submit">
+                    Add Product
+                </button>
+
+            </form>
+
+            <p id="message"></p>
+
+        </section>
+
+
+        <!-- PRODUCTS -->
+
+        <h2>Products</h2>
+
+        <div id="products" class="products">
+            <p>Loading products...</p>
+        </div>
+
+    </main>
+
+    <script src="js/products.js"></script>
+
+</body>
+
+</html>html>
